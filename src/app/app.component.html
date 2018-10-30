@@ -1,0 +1,22 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+ </div>
+
+<ul *ngFor="let item of details" style="background-color:#f7f3f3;margin:20px">
+  <li style="bottom-border:1px solid black;list-style-type: none;padding:10px">
+    <b>{{item.title}}</b>
+	<p>&nbsp;{{item.text}}</p>
+  </li>
+</ul>
+
+<ngx-spinner
+  bdColor="rgba(51,51,51,0.8)"
+  size="medium"
+  color="#fff"
+  type="ball-scale-multiple">
+ <p style="font-size: 20px; color: white">Loading...</p>
+</ngx-spinner>
+
